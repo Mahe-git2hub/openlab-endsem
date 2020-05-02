@@ -159,7 +159,7 @@ def index():
     elif request.method == 'POST':
         url = request.form.get('News article URL')
         print(url)
-        string_content_url = url_for('url_to_string', url_to_scrape=str(url))
+        string_content_url = url_to_string(url)
         nlp_content = string_to_nlp(string_content_url)
         pprint(nlp_content)
 
