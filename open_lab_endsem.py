@@ -34,7 +34,6 @@ from flask import Flask, render_template, request, flash, redirect, url_for
 from wordcloud import WordCloud
 from werkzeug.wrappers import Request, Response
 import matplotlib.pyplot as plt
-from google.colab.output import eval_js
 import socket
 
 import nltk
@@ -159,7 +158,7 @@ def index():
     elif request.method == 'POST':
         url = request.form.get('News article URL')
         print(url)
-        string_content_url = url_to_string(url)
+        string_content_url = url_to_string(str(url))
         nlp_content = string_to_nlp(string_content_url)
         print('nlp content: ', nlp_content)
         return redirect(url_for('PartsofSpeech'))
