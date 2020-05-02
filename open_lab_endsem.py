@@ -115,11 +115,12 @@ def NER(ner_article):
     return displacy.render(ner_article, style='ent', jupyter=False)
 
 
-doc1 = nlp("This is a sentence.")
-doc2 = nlp("This is another sentence.")
-html = displacy.render([doc1, doc2], style="dep", page=True)
-
-pprint(html)
+#
+# doc1 = nlp("This is a sentence.")
+# doc2 = nlp("This is another sentence.")
+# html = displacy.render([doc1, doc2], style="dep", page=True)
+#
+# # pprint(html)
 
 
 # displacy.render(ner_article, jupyter=True, style='ent')
