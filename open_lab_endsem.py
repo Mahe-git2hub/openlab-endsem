@@ -60,9 +60,9 @@ new_stopwords = ['Hindu', 'Subscribe Now', 'free trial', 'Subscription', 'Subscr
 stop_words = stop_words.union(new_stopwords)
 
 
-@app.route('/url_to_string', methods=['GET'])
-def url_to_string(url):
-    res = requests.get(url)
+@app.route('/url_to_string/<url_to_scrape>', methods=['GET'])
+def url_to_string(url_to_scrape):
+    res = requests.get(url_to_scrape)
     html = res.text
     soup = BeautifulSoup(html, 'html5lib')
     for script in soup(["script", "style", 'aside']):
@@ -93,12 +93,13 @@ print(sentences[sent_num])
 
 displacy.render(nlp(str(sentences[sent_num])), jupyter=True, style='ent')
 
+
 # displacy.render(nlp(str(sentences[sent_num])), jupyter=True, style='ent')
 #
 # displacy.render(nlp(str(sentences[sent_num])), style='dep', jupyter = True, options = {'distance': 70})
 # sentence and its dependencies
-
-@app.route('/pos', methods=['GET'])
+@app.route('/pos', defaults={'pos_article': link3, 'sent_nums': 10})
+@app.route('/pos/<string:pos_article>/<int:sent_nums>', methods=['GET'])
 def PartsofSpeech(pos_article, sent_nums=10):
     sentences_pos = [x for x in pos_article.sents]
     # any sentence can be selected randomly default is 10
@@ -106,11 +107,12 @@ def PartsofSpeech(pos_article, sent_nums=10):
     output_path = Path(os.path.join("./", "sentence.svg"))
     output_path.open('w', encoding="utf-8").write(svg)
     # sentence and its dependencies
+    return None
 
 
-@app.route('/NER', methods=['GET'])
+@app.route('/NER/<ner_article>', methods=['GET'])
 def NER(ner_article):
-    displacy.render(ner_article, style='ent', jupyter=False)
+    return displacy.render(ner_article, style='ent', jupyter=False)
 
 
 doc1 = nlp("This is a sentence.")
@@ -135,7 +137,7 @@ plt.tight_layout(pad=0)
 plt.show()
 
 
-@app.route('/wcloud')
+@app.route('/wcloud/<wc_article>')
 def wc(wc_article):
     wordcloud = WordCloud(width=8000, height=8000, background_color='white', min_font_size=10,
                           stopwords=stop_words).generate(wc_article)
@@ -146,6 +148,7 @@ def wc(wc_article):
     plt.savefig('wordcloud.png', dpi='figure')
     plt.show()
 
+
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
 def index():
@@ -154,6 +157,9 @@ def index():
     elif request.method == 'POST':
         url = request.form.get('News article URL')
         print(url)
+        string_content_url = url_for('url_to_string', url)
+        nlp_content = string_to_nlp(string_content_url)
+        pprint(nlp_content)
 
 
 if __name__ == '__main__':
