@@ -13,17 +13,18 @@
   <title>News article highlights detector.</title>
 
   <!-- Icons font CSS-->
-  <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-  <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+  <link href="../static/vendor/mdi-font/css/material-design-iconic-font.min.css" media="all" rel="stylesheet">
+  <link href="../static/vendor/font-awesome-4.7/css/font-awesome.min.css" media="all" rel="stylesheet">
   <!-- Font special for pages-->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
 
   <!-- Vendor CSS-->
-  <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
-  <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+  <link href="../static/vendor/select2/select2.min.css" media="all" rel="stylesheet">
+  <link href="../static/vendor/datepicker/daterangepicker.css" media="all" rel="stylesheet">
 
   <!-- Main CSS-->
-  <link href="css/main.css" rel="stylesheet" media="all">
+  <link href="../static/css/main.css" media="all" rel="stylesheet">
 </head>
 
 <body>
@@ -32,7 +33,7 @@
       <div class="card card-4">
         <div class="card-body">
           <h2 class="title">Enter the URL here</h2>
-          <form action="{{url_for('index'}}" method="POST">
+          <form action="{{url_for('index')}}" method="POST">
             <div class="row row-space">
               <div class="col-2">
                 <div class="input-group">
@@ -40,26 +41,26 @@
                   <input class="input--style-4" type="url" name="News article URL" required>
                 </div>
               </div>
-        </div>
-        <div class="p-t-15">
-          <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+            </div>
+            <div class="p-t-15">
+              <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
           <button class="btn btn--radius-2 btn--green" type="reset">RESET</button>
+            </div>
+          </form>
         </div>
-        </form>
       </div>
     </div>
   </div>
-  </div>
 
   <!-- Jquery JS-->
-  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="../static/vendor/jquery/jquery.min.js"></script>
   <!-- Vendor JS-->
-  <script src="vendor/select2/select2.min.js"></script>
-  <script src="vendor/datepicker/moment.min.js"></script>
-  <script src="vendor/datepicker/daterangepicker.js"></script>
+  <script src="../static/vendor/select2/select2.min.js"></script>
+  <script src="../static/vendor/datepicker/moment.min.js"></script>
+  <script src="../static/vendor/datepicker/daterangepicker.js"></script>
 
   <!-- Main JS-->
-  <script src="js/global.js"></script>
+  <script src="../static/js/global.js"></script>
 
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
