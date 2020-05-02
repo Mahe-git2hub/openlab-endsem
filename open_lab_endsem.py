@@ -162,6 +162,7 @@ def index():
         string_content_url = url_to_string(url)
         nlp_content = string_to_nlp(string_content_url)
         pprint(nlp_content)
+        return None
 
 
 if __name__ == '__main__':
