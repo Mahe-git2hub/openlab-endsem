@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bedd2fa-cf26-45c4-9cba-a000c1c59705" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scopes/flask.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/end sem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/end sem.iml" afterDir="false" />
+    <list default="true" id="0bedd2fa-cf26-45c4-9cba-a000c1c59705" name="Default Changelist" comment="updated so that wordcloud doesn't run beforehand.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/open_lab_endsem.py" beforeDir="false" afterPath="$PROJECT_DIR$/open_lab_endsem.py" afterDir="false" />
     </list>
@@ -137,7 +133,8 @@
       <workItem from="1588166492162" duration="701000" />
       <workItem from="1588312579529" duration="5196000" />
       <workItem from="1588389880453" duration="1291000" />
-      <workItem from="1588401950468" duration="5234000" />
+      <workItem from="1588401950468" duration="6395000" />
+      <workItem from="1588422854273" duration="564000" />
     </task>
     <task id="LOCAL-00001" summary="resolved template issue">
       <created>1588403316630</created>
@@ -146,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588403316630</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added parameters to url">
+      <created>1588419736396</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588419736396</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,10 +169,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="resolved template issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="resolved template issue" />
+    <MESSAGE value="added parameters to url" />
+    <MESSAGE value="updated so that wordcloud doesn't run beforehand." />
+    <option name="LAST_COMMIT_MESSAGE" value="updated so that wordcloud doesn't run beforehand." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -177,10 +184,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="410" y="179" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1588167496456" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1588403314750">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1588422970276">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588403314750" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588422970276" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1588403245439">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -205,10 +212,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588402213672" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1588403324470">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1588419791149">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588403324470" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588419791149" />
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588402923511">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

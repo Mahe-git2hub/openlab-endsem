@@ -121,20 +121,21 @@ html = displacy.render([doc1, doc2], style="dep", page=True)
 
 pprint(html)
 
+
 # displacy.render(ner_article, jupyter=True, style='ent')
 #
 # doc1 = nlp("This is a sentence.")
 # doc2 = nlp("This is another sentence.")
 # html = displacy.render([doc1, doc2], style="dep", page=True)
 
-wordcloud = WordCloud(width=8000, height=8000, background_color='white', min_font_size=10,
-                      stopwords=stop_words).generate(url_to_string(link1))
-plt.figure(figsize=(20, 28), facecolor=None)
-plt.imshow(wordcloud)
-plt.axis("off")
-plt.tight_layout(pad=0)
-
-plt.show()
+# wordcloud = WordCloud(width=8000, height=8000, background_color='white', min_font_size=10,
+#                       stopwords=stop_words).generate(url_to_string(link1))
+# plt.figure(figsize=(20, 28), facecolor=None)
+# plt.imshow(wordcloud)
+# plt.axis("off")
+# plt.tight_layout(pad=0)
+#
+# plt.show()
 
 
 @app.route('/wcloud/<wc_article>')
