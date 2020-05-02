@@ -19,14 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bedd2fa-cf26-45c4-9cba-a000c1c59705" name="Default Changelist" comment="updated so that wordcloud doesn't run beforehand.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0bedd2fa-cf26-45c4-9cba-a000c1c59705" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/open_lab_endsem.py" beforeDir="false" afterPath="$PROJECT_DIR$/open_lab_endsem.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="ONTO" value="refs/remotes/origin/master" />
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -35,6 +37,9 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="onto" value="ed201019e433f664e8da6dde236d394c42afe787" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
