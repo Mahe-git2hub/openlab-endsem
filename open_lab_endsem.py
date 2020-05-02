@@ -165,6 +165,6 @@ def index():
 
 
 if __name__ == '__main__':
-    # print("Use the following links if don't have any :\n", link1, '\n', link2, '\n', link3)
+    print("Use the following links if don't have any :\n", link1, '\n', link2, '\n', link3)
     # print(eval_js("google.colab.kernel.proxyPort(5000)"))
     app.run()
