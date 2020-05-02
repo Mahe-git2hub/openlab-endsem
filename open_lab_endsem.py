@@ -32,7 +32,6 @@ import requests
 import re
 from flask import Flask, render_template, request, flash, redirect, url_for
 from wordcloud import WordCloud
-from werkzeug.wrappers import Request, Response
 import matplotlib.pyplot as plt
 import socket
 
@@ -59,7 +58,7 @@ new_stopwords = ['Hindu', 'Subscribe Now', 'free trial', 'Subscription', 'Subscr
 stop_words = stop_words.union(new_stopwords)
 
 
-@app.route('/url_to_string/<url_to_scrape>', methods=['GET'])
+@app.route('/url_to_string/<url_to_scrape>', methods=['POST'])
 def url_to_string(url_to_scrape):
     res = requests.get(url_to_scrape)
     html = res.text
@@ -166,5 +165,4 @@ def index():
 
 if __name__ == '__main__':
     print("Use the following links if don't have any :\n", link1, '\n', link2, '\n', link3)
-    # print(eval_js("google.colab.kernel.proxyPort(5000)"))
     app.run()
