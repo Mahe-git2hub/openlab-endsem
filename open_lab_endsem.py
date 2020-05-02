@@ -160,7 +160,10 @@ def index():
         string_content_url = url_to_string(str(url))
         nlp_content = string_to_nlp(string_content_url)
         print('nlp content: ', nlp_content)
-        return redirect(url_for('PartsofSpeech'))
+        PartsofSpeech(nlp_content)
+        ner_object = NER(ner_article=nlp_content)
+        print(ner_object)
+        return render_template('display.html')
 
 
 if __name__ == '__main__':
