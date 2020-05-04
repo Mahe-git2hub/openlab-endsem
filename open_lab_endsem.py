@@ -18,6 +18,7 @@ Original file is located at
 from flask_ngrok import run_with_ngrok
 
 import spacy
+from spacy.matcher import PhraseMatcher
 from spacy import displacy
 from collections import Counter
 import en_core_web_sm
@@ -69,12 +70,56 @@ def url_to_string(url_to_scrape):
 
 
 def string_to_nlp(s: str):
+    matcher = PhraseMatcher(nlp.vocab)
+    states = ['Andhra Pradesh',
+              'Arunachal Pradesh',
+              'Assam',
+              'Bihar',
+              'Chhattisgarh',
+              'Goa',
+              'Gujarat',
+              'Haryana',
+              'Himachal Pradesh',
+              'Jharkhand',
+              'Karnataka',
+              'Kerala',
+              'Madhya Pradesh',
+              'Maharashtra',
+              'Manipur',
+              'Meghalaya',
+              'Mizoram',
+              'Nagaland',
+              'Odisha',
+              'Punjab',
+              'Rajasthan',
+              'Sikkim',
+              'Tamil Nadu',
+              'Telangana',
+              'Tripura',
+              'Uttar Pradesh',
+              'Uttarakhand',
+              'West Bengal',
+              'Andaman and Nicobar',
+              'Chandigarh',
+              'Dadra Nagar ',
+              'Haveli ',
+              'Daman ',
+              'Diu',
+              'Delhi',
+              'Jammu and Kashmir',
+              'Ladakh',
+              'Lakshadweep',
+              'Puducherry']
+    # Only run nlp.make_doc to speed things up
+    patterns = [nlp.make_doc(text) for text in states]
+    matcher.add("Indian State", None, *patterns)
     return nlp(s)
 
 
 art = url_to_string(link2)
 article = nlp(art)
 print(article.ents)
+print(string_to_nlp(art).ents)
 
 print(len(string_to_nlp(url_to_string(link3))))
 
