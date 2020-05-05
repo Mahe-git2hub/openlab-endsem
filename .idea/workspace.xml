@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bedd2fa-cf26-45c4-9cba-a000c1c59705" name="Default Changelist" comment="updated .idea folder commit" />
+    <list default="true" id="0bedd2fa-cf26-45c4-9cba-a000c1c59705" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/open_lab_endsem.py" beforeDir="false" afterPath="$PROJECT_DIR$/open_lab_endsem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+    </list>
     <list id="c9794423-5d71-40c4-a16c-a530d6858470" name="added register page" comment="added register page&#10;&#10;(cherry picked from commit 3424b1e5d91651eaa381739781690520cdd790dc)">
       <changelist_data name="Mahe-git2hub" email="gg.mahesh951@gmail.com" date="1588655683000" />
     </list>
@@ -319,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588661690211</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="db_creator commit">
+      <created>1588664622782</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1588664622782</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +377,8 @@
     <MESSAGE value="updated .idea folder commit" />
     <MESSAGE value="added register page" />
     <MESSAGE value="added db and changed index fn behaviour" />
-    <option name="LAST_COMMIT_MESSAGE" value="added db and changed index fn behaviour" />
+    <MESSAGE value="db_creator commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="db_creator commit" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -376,10 +387,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="410" y="179" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1588167496456" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1588661688891">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1588664621949">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588661688891" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588664621949" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1588613711750">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -412,10 +423,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588402213672" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1588661701598">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1588664676263">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588661701598" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588664676263" />
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588615377273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

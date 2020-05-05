@@ -219,6 +219,8 @@ def login():
         db_session.query(Complaint).filter_by(id=ids).first()
         if username == 'Mahesh' and password == 'WE':
             return redirect(url_for('display'))
+        else:
+            return render_template('display.html')
 
 
 @app.route('/display', methods=['GET', 'POST'])
