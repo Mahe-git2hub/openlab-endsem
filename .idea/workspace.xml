@@ -19,8 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bedd2fa-cf26-45c4-9cba-a000c1c59705" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/open_lab_endsem.py" beforeDir="false" afterPath="$PROJECT_DIR$/open_lab_endsem.py" afterDir="false" />
+    <list default="true" id="0bedd2fa-cf26-45c4-9cba-a000c1c59705" name="Default Changelist" comment="updated .idea folder commit" />
+    <list id="c9794423-5d71-40c4-a16c-a530d6858470" name="added register page" comment="added register page&#10;&#10;(cherry picked from commit 3424b1e5d91651eaa381739781690520cdd790dc)">
+      <changelist_data name="Mahe-git2hub" email="gg.mahesh951@gmail.com" date="1588655683000" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +52,7 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitRewordedCommitMessages">
     <option name="onto" value="ed201019e433f664e8da6dde236d394c42afe787" />
