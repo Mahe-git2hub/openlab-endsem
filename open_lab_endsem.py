@@ -61,9 +61,8 @@ stop_words = set(stopwords.words("english"))
 new_stopwords = ['Hindu', 'Subscribe Now', 'free trial', 'Subscription', 'Subscribe']
 stop_words = stop_words.union(new_stopwords)
 
-
-def id_generator():
-    return ''.join(random.choice(chars) for _ in range(20))
+# def id_generator():
+#     return ''.join(random.choice(chars) for _ in range(20))
 
 
 objects = []
@@ -225,7 +224,7 @@ def login():
         username = request.form.get('username')
         password = request.form.get('pass')
         print(db_session.query_property('Login'))
-        db_session.query(Complaint).filter_by(id=ids).first()
+        # db_session.query(Complaint).filter_by(id=ids).first()
         if username == 'Mahesh' and password == 'WE':
             return redirect(url_for('display'))
         else:
