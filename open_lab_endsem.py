@@ -63,8 +63,11 @@ stop_words = stop_words.union(new_stopwords)
 
 
 def id_generator():
-    return ''.join(random.choice(chars) for _ in range(size))
+    return ''.join(random.choice(chars) for _ in range(20))
 
+
+objects = []
+url = None
 
 engine = create_engine('sqlite:///namma_db.db')
 db_session = scoped_session(sessionmaker(autocommit=False, autoflush=False, bind=engine))
@@ -148,12 +151,7 @@ sentences = [x for x in article.sents]
 sent_num = 10
 print(sentences[sent_num])
 
-displacy.render(nlp(str(sentences[sent_num])), jupyter=True, style='ent')
 
-
-# displacy.render(nlp(str(sentences[sent_num])), jupyter=True, style='ent')
-#
-# displacy.render(nlp(str(sentences[sent_num])), style='dep', jupyter = True, options = {'distance': 70})
 # sentence and its dependencies
 @app.route('/pos', defaults={'pos_article': link3, 'sent_nums': 10})
 @app.route('/pos/<string:pos_article>/<int:sent_nums>', methods=['GET'])
@@ -164,12 +162,15 @@ def PartsofSpeech(pos_article, sent_nums=10):
     output_path = Path(os.path.join("./", "sentence.svg"))
     output_path.open('w', encoding="utf-8").write(svg)
     # sentence and its dependencies
-    return None
+    return redirect(url_for('NER', ner_article=pos_article))
 
 
 @app.route('/NER/<ner_article>', methods=['GET'])
 def NER(ner_article):
-    return displacy.render(ner_article, style='ent', jupyter=False)
+    ner_obj = displacy.render(ner_article, style='ent', jupyter=False)
+    global objects
+    objects.append(ner_obj)
+    return redirect(url_for('wc', wc_article=url_to_string(url)))
 
 
 #
@@ -195,6 +196,13 @@ def NER(ner_article):
 #
 # plt.show()
 
+@app.route('/final')
+def final():
+    global objects
+    with open('../templates/test.html', 'w') as f:
+        f.writelines(objects)
+    return render_template('test.html')
+
 
 @app.route('/wcloud/<wc_article>')
 def wc(wc_article):
@@ -206,6 +214,7 @@ def wc(wc_article):
     plt.tight_layout(pad=0)
     plt.savefig('wordcloud.png', dpi='figure')
     plt.show()
+    return redirect(url_for('final'))
 
 
 @app.route('/login', methods=["GET", "POST"])
@@ -236,17 +245,14 @@ def display():
     if request.method == 'GET':
         return render_template('index.html')
     elif request.method == 'POST':
+        global url
         url = request.form.get('News article URL')
         print(url)
         string_content_url = url_to_string(str(url))
         nlp_content = string_to_nlp(string_content_url)
         print('nlp content: ', nlp_content)
-        # PartsofSpeech(nlp_content)
-        ner_object = NER(ner_article=nlp_content)
-        # print(ner_object)
-        with open('templates/test.html', 'w') as f:
-            f.writelines(ner_object)
-        return render_template('test.html')
+        return redirect(
+            url_for('PartsofSpeech', pos_article=nlp_content, sent_nums=input('Enter the number of sentences')))
 
 
 @app.route('/', methods=['GET'])
