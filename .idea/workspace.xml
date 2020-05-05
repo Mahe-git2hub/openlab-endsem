@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bedd2fa-cf26-45c4-9cba-a000c1c59705" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/open_lab_endsem.py" beforeDir="false" afterPath="$PROJECT_DIR$/open_lab_endsem.py" afterDir="false" />
-    </list>
+    <list default="true" id="0bedd2fa-cf26-45c4-9cba-a000c1c59705" name="Default Changelist" comment="" />
     <list id="c9794423-5d71-40c4-a16c-a530d6858470" name="added register page" comment="added register page&#10;&#10;(cherry picked from commit 3424b1e5d91651eaa381739781690520cdd790dc)">
       <changelist_data name="Mahe-git2hub" email="gg.mahesh951@gmail.com" date="1588655683000" />
     </list>
@@ -90,7 +88,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/static/js" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.scopes" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -173,7 +171,7 @@
       <workItem from="1588609391988" duration="3152000" />
       <workItem from="1588614371056" duration="3730000" />
       <workItem from="1588654924358" duration="6590000" />
-      <workItem from="1588678865215" duration="4267000" />
+      <workItem from="1588678865215" duration="4701000" />
     </task>
     <task id="LOCAL-00001" summary="resolved template issue">
       <created>1588403316630</created>
@@ -350,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588684979832</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="commented id generator fn">
+      <created>1588685501278</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1588685501278</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,7 +407,8 @@
     <MESSAGE value="changed login.html post method to render to login page." />
     <MESSAGE value="added register route" />
     <MESSAGE value="finished url movements" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished url movements" />
+    <MESSAGE value="commented id generator fn" />
+    <option name="LAST_COMMIT_MESSAGE" value="commented id generator fn" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -411,14 +417,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="410" y="179" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1588167496456" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1588684977795">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1588685500209">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588684977795" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588685500209" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1588613711750">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1588613711750" />
+    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1588685910153">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588685910153" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1588430541666">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -443,22 +453,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="657" y="280" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1588617280176" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1588402213672">
+    <state x="277" y="57" key="SettingsEditor" timestamp="1588685915512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588402213672" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1588684983175">
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588685915512" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1588685544107">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588684983175" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588685544107" />
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588615377273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1588615377273" />
-    <state x="466" y="201" key="git4idea.merge.GitPullDialog" timestamp="1588617311114">
+    <state x="466" y="201" key="git4idea.merge.GitPullDialog" timestamp="1588685516788">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="466" y="201" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1588617311114" />
+    <state x="466" y="201" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1588685516788" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1588660403979">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
