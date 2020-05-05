@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bedd2fa-cf26-45c4-9cba-a000c1c59705" name="Default Changelist" comment="" />
+    <list default="true" id="0bedd2fa-cf26-45c4-9cba-a000c1c59705" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <list id="c9794423-5d71-40c4-a16c-a530d6858470" name="added register page" comment="added register page&#10;&#10;(cherry picked from commit 3424b1e5d91651eaa381739781690520cdd790dc)">
       <changelist_data name="Mahe-git2hub" email="gg.mahesh951@gmail.com" date="1588655683000" />
     </list>
@@ -85,19 +88,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\c programming\sem-6\open lab\end sem\static\js" />
-      <recent name="D:\c programming\sem-6\open lab\end sem\static\css" />
-      <recent name="D:\c programming\sem-6\open lab\end sem\templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\c programming\sem-6\open lab\end sem\static" />
+      <recent name="D:\c programming\sem-6\open lab\end sem\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\c programming\sem-6\open lab\end sem" />
+      <recent name="D:\c programming\sem-6\open lab\end sem\static\js" />
+      <recent name="D:\c programming\sem-6\open lab\end sem\static\css" />
       <recent name="D:\c programming\sem-6\open lab\end sem\templates" />
     </key>
   </component>
@@ -171,7 +175,7 @@
       <workItem from="1588609391988" duration="3152000" />
       <workItem from="1588614371056" duration="3730000" />
       <workItem from="1588654924358" duration="6590000" />
-      <workItem from="1588678865215" duration="4701000" />
+      <workItem from="1588678865215" duration="5113000" />
     </task>
     <task id="LOCAL-00001" summary="resolved template issue">
       <created>1588403316630</created>
@@ -355,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588685501278</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="added req.txt">
+      <created>1588686195891</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1588686195891</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,7 +419,8 @@
     <MESSAGE value="added register route" />
     <MESSAGE value="finished url movements" />
     <MESSAGE value="commented id generator fn" />
-    <option name="LAST_COMMIT_MESSAGE" value="commented id generator fn" />
+    <MESSAGE value="added req.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="added req.txt" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -417,10 +429,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="410" y="179" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1588167496456" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1588685500209">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1588686194778">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588685500209" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588686194778" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1588613711750">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -457,10 +469,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588685915512" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1588685544107">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1588686204459">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588685544107" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588686204459" />
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588615377273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
