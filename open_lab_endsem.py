@@ -223,6 +223,14 @@ def login():
             return render_template('display.html')
 
 
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    if request.method == 'GET':
+        return render_template('register.html')
+    elif request.method == 'POST':
+        return redirect('login')
+
+
 @app.route('/display', methods=['GET', 'POST'])
 def display():
     if request.method == 'GET':
