@@ -20,7 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bedd2fa-cf26-45c4-9cba-a000c1c59705" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/end sem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/end sem.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open_lab_endsem.py" beforeDir="false" afterPath="$PROJECT_DIR$/open_lab_endsem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -68,7 +74,9 @@
     </order>
   </component>
   <component name="ProjectId" id="1bDV5zX0DyYNp78RGHuLVv7UIne" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -165,7 +173,7 @@
       <workItem from="1588489598809" duration="1376000" />
       <workItem from="1588609391988" duration="3152000" />
       <workItem from="1588614371056" duration="3730000" />
-      <workItem from="1588654924358" duration="627000" />
+      <workItem from="1588654924358" duration="6275000" />
     </task>
     <task id="LOCAL-00001" summary="resolved template issue">
       <created>1588403316630</created>
@@ -293,7 +301,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588618133086</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added register page">
+      <created>1588655684023</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1588655684023</updated>
+    </task>
+    <task id="LOCAL-00020" summary="added db and changed index fn behaviour">
+      <created>1588660597460</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1588660597460</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +361,9 @@
     <MESSAGE value="delete a stupid readme file." />
     <MESSAGE value="added login page and its related files" />
     <MESSAGE value="updated .idea folder commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated .idea folder commit" />
+    <MESSAGE value="added register page" />
+    <MESSAGE value="added db and changed index fn behaviour" />
+    <option name="LAST_COMMIT_MESSAGE" value="added db and changed index fn behaviour" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -348,10 +372,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="410" y="179" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1588167496456" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1588618131916">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1588660596334">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588618131916" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588660596334" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1588613711750">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -372,6 +396,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588430541666" />
+    <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1588655955142">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1588655955142" />
     <state x="657" y="280" key="MultipleFileMergeDialog" timestamp="1588617280176">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -380,10 +408,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588402213672" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1588618135569">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1588660600930">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588618135569" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588660600930" />
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588615377273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -392,6 +420,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="466" y="201" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1588617311114" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1588660403979">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1588660403979" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/end_sem$open_lab_endsem.coverage" NAME="open_lab_endsem Coverage Results" MODIFIED="1588425601029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

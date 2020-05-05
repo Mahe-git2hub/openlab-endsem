@@ -16,12 +16,15 @@ Original file is located at
 # !pip install flask-ngrok
 
 from flask_ngrok import run_with_ngrok
-
+from sqlalchemy import create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import scoped_session, sessionmaker
 import spacy
 from spacy.matcher import PhraseMatcher
 from spacy import displacy
 from collections import Counter
 import en_core_web_sm
+from db_creator import Login
 
 nlp = en_core_web_sm.load()
 from pprint import pprint
@@ -57,6 +60,17 @@ print('Socket : \t', socket.gethostbyname(socket.getfqdn(socket.gethostname())))
 stop_words = set(stopwords.words("english"))
 new_stopwords = ['Hindu', 'Subscribe Now', 'free trial', 'Subscription', 'Subscribe']
 stop_words = stop_words.union(new_stopwords)
+
+
+def id_generator():
+    return ''.join(random.choice(chars) for _ in range(size))
+
+
+engine = create_engine('sqlite:///namma_db.db')
+db_session = scoped_session(sessionmaker(autocommit=False, autoflush=False, bind=engine))
+
+Base = declarative_base()
+Base.query = db_session.query_property()
 
 
 @app.route('/url_to_string/<url_to_scrape>', methods=['POST'])
@@ -194,9 +208,21 @@ def wc(wc_article):
     plt.show()
 
 
-@app.route('/', methods=['GET', 'POST'])
-@app.route('/index', methods=['GET', 'POST'])
-def index():
+@app.route('/login', methods=["GET", "POST"])
+def login():
+    if request.method == 'GET':
+        return render_template('login.html')
+    elif request.method == 'POST':
+        username = request.form.get('username')
+        password = request.form.get('pass')
+        print(db_session.query_property('Login'))
+        db_session.query(Complaint).filter_by(id=ids).first()
+        if username == 'Mahesh' and password == 'WE':
+            return redirect(url_for(''))
+
+
+@app.route('/display', methods=['GET', 'POST'])
+def display():
     if request.method == 'GET':
         return render_template('index.html')
     elif request.method == 'POST':
@@ -211,6 +237,13 @@ def index():
         with open('templates/test.html', 'w') as f:
             f.writelines(ner_object)
         return render_template('test.html')
+
+
+@app.route('/', methods=['GET'])
+@app.route('/index', methods=['GET'])
+def index():
+    if request.method == 'GET':
+        return redirect(url_for('login'), code=302)
 
 
 if __name__ == '__main__':
